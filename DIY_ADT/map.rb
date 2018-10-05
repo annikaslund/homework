@@ -33,5 +33,6 @@ class Map
   end
 
   def show
+    @m.first
   end
 end
