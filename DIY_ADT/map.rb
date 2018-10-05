@@ -16,7 +16,12 @@ class Map
   end
 
   def get(key)
-    
+    @m.each do |set|
+      if set[0] == key
+        return set
+      end
+    end
+    nil
   end
 
   def delete(key)
