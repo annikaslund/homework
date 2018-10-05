@@ -25,6 +25,11 @@ class Map
   end
 
   def delete(key)
+    @m.each do |set|
+      if set[0] == key
+        @m.delete(set)
+      end
+    end
   end
 
   def show
